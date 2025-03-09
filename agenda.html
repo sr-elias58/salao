@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Salão de Beleza ESPAÇO DELAS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff1493;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Salão de Beleza - Agendamento Online</h1>
+    </header>
+    <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#agendamento">Agendamento</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <div class="container">
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Corte de cabelo</li>
+                <li>Manicure e pedicure</li>
+                <li>Maquiagem</li>
+                <li>Hidratação e tratamento capilar</li>
+            </ul>
+        </section>
+        <section id="agendamento">
+            <h2>Agende seu Horário</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="servico">Serviço:</label>
+                <select id="servico" name="servico" required>
+                    <option value="corte">Corte de cabelo</option>
+                    <option value="manicure">Manicure e pedicure</option>
+                    <option value="maquiagem">Maquiagem</option>
+                    <option value="hidratacao">Hidratação capilar</option>
+                </select>
+                
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+                
+                <label for="hora">Horário:</label>
+                <input type="time" id="hora" name="hora" required>
+                
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Telefone: (61) 999345630</p>
+            <p>Email: contato@spaçodelas.com</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 - Salão de Beleza spaçodelas</p>
+    </footer>
+</body>
+</html>
